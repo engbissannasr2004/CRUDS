@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="cruds.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+</head>
+<body>
+<!-- #37517e; -->
+    <!-- width: 100%; -->
+<!-- مشروع نظام ادارة سلع المنتجات -->
+    <div class="curd">
+        <div class="head">
+            <div class="">
+            <h2 class="title">cruds system</h2>
+            <!-- <p>CREATE READ UPDATE DELETE SEARCH</p> -->
+            <a href="#"><i class="fa-solid fa-moon"onclick="document.body.classList.toggle('dark')"></i></a>
+            </div>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+            <!-- <p>CREATE READ UPDATE DELETE SEARCH</p> -->
+        </div>
+
+        <div class="inputs">
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div> 
+            <input  type="number" id="count" placeholder="count" >
+            <input type="text" id="category" placeholder="category">
+            <button id="submit">Create</button>
+        </div>
+
+        <div class="outputs">
+            <div class="sarchBlock">
+            <input onkeyup=" searchData(this.value)"class="" id="search" placeholder="Search" type="text">
+            <div class="buttons">
+                <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+            </div>
+        </div>
+                
+            </div>
+<div id="deleteAll"></div>
+
+
+        <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>TITLE</th>
+                            <th>PRICE</th>
+                            <th>TAXES</th>
+                            <th>ADS</th>
+                            <th>DISCOUNT</th>
+                            <th>TOTAL</th>
+                            <th>CATEGORY</th>
+                            <th>UPDATE</th>
+                            <th>DELETE</th>
+                        </tr>
+
+                    <tbody id="tbody">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>iphone</td>
+                            <td>2000</td>
+                            <td>52</td>
+                            <td>125</td>
+                            <td>45</td>
+                            <td>2132</td>
+                            <td>iphone</td>
+                            <td><button>update</button></td>
+                            <td><button>delete</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>lg smart</td>
+                            <td>1000</td>
+                            <td>32</td>
+                            <td>3</td>
+                            <td>26</td>
+                            <td>1009</td>
+                            <td>tv</td>
+                            <td><button>update</button></td>
+                            <td><button>delete</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>samsung s30</td>
+                            <td>2000</td>
+                            <td>52</td>
+                            <td>125</td>
+                            <td>45</td>
+                            <td>2134</td>
+                            <td>phone</td>
+                            <td><button>update</button></td>
+                            <td><button>delete</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>lenovo</td>
+                            <td>3000</td>
+                            <td>564</td>
+                            <td>45</td>
+                            <td>45</td>
+                            <td>3564</td>
+                            <td>laptop</td>
+                            <td><button>update</button></td>
+                            <td><button>delete</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>oops</td>
+                            <td>1000</td>
+                            <td>32</td>
+                            <td>3</td>
+                            <td>26</td>
+                            <td>1009</td>
+                            <td>iphone</td>
+                            <td><button>update</button></td>
+                            <td><button>delete</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>6</td>
+                            <td>phone</td>
+                            <td>2000</td>
+                            <td>52</td>
+                            <td>125</td>
+                            <td>45</td>
+                            <td>2132</td>
+                            <td>phone</td>
+                            <td><button>update</button></td>
+                            <td><button>delete</button></td>
+                        </tr> -->
+                        
+                    </tbody>
+                </table>
+    </div>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="cruds.js"></script>
+<!-- <script src="js/crud.js"></script> -->
+</body> 
+</html>
