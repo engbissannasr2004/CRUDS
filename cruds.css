@@ -192,6 +192,7 @@ tbody tr:hover{
     }
     button{
     font-size: 12px;
+    width: 90%;
     }
     .title{
         font-size:28px;
