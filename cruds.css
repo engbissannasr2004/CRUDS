@@ -178,21 +178,17 @@ tbody tr:hover{
 @media (max-width: 768px){  
     table{
         width:5%;
-        font-size: 7px;
+        font-size: 6px;
     }
     button:hover{
         letter-spacing:1px;
     }
     input{
         padding: 17px;
-        width: 90%;
     }
-    .buttons{
-        width: 90%;
-    }
+    
     button{
     font-size: 12px;
-    width: 90%;
     }
     .title{
         font-size:28px;
