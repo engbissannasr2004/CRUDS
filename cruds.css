@@ -178,7 +178,7 @@ tbody tr:hover{
 @media (max-width: 768px){  
     table{
         width:5%;
-        font-size: 9px;
+        font-size: 7px;
     }
     button:hover{
         letter-spacing:1px;
